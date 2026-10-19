@@ -1,0 +1,170 @@
+/* Smart Fire Station Management - charte graphique
+   Bleu principal #1F4E79 | Rouge d'accent #C00000 | Fond #FFFFFF | Texte #1F1F1F */
+
+* {
+    font-family: "Arial", "Segoe UI", "Helvetica", sans-serif;
+    font-size: 13px;
+    color: #1F1F1F;
+}
+
+QMainWindow, QDialog, #centralwidget,
+#pageDashboard, #pagePersonnel, #pageVehicules, QStackedWidget {
+    background: #F4F6F8;
+}
+
+QMessageBox { background: #FFFFFF; }
+QLabel { background: transparent; }
+QToolTip { background: #1F4E79; color: white; border: none; padding: 4px; }
+QStatusBar { background: #FFFFFF; color: #6B7280; border-top: 1px solid #E3E6EA; }
+QStatusBar::item { border: none; }
+
+/* ---------- Menu latéral ---------- */
+#sidebar { background: #1F4E79; }
+#sidebar QLabel { color: #FFFFFF; }
+#labelRole { color: #DCE6F0; font-size: 12px; padding: 4px; }
+
+QPushButton[class="navButton"] {
+    background: transparent;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    text-align: left;
+    padding: 13px 16px;
+    font-size: 14px;
+}
+QPushButton[class="navButton"]:hover { background: rgba(255, 255, 255, 0.14); }
+QPushButton[class="navButton"]:checked { background: #C00000; font-weight: bold; }
+
+QPushButton[class="navQuit"] {
+    background: transparent; color: #FFFFFF; text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.35); border-radius: 8px;
+    padding: 11px 16px; font-size: 14px;
+}
+QPushButton[class="navQuit"]:hover { background: #C00000; border-color: #C00000; }
+
+/* ---------- Titres ---------- */
+QLabel[class="pageTitle"]    { font-size: 26px; font-weight: bold; color: #1F1F1F; }
+QLabel[class="pageSubtitle"] { font-size: 12px; color: #6B7280; }
+QLabel[class="cardTitle"]    { font-size: 17px; font-weight: bold; }
+QLabel[class="cardSubtitle"] { font-size: 14px; color: #6B7280; }
+QLabel[class="cardDetail"]   { font-size: 12px; color: #6B7280; }
+QLabel[class="bigGreen"]     { font-size: 30px; font-weight: bold; color: #2E7D32; }
+QLabel[class="bigRed"]       { font-size: 30px; font-weight: bold; color: #C00000; }
+
+QLabel[class="textDanger"]      { color: #C00000; }
+QLabel[class="textDangerBold"]  { color: #C00000; font-weight: bold; }
+QLabel[class="textSuccess"]     { color: #2E7D32; }
+QLabel[class="textSuccessBold"] { color: #2E7D32; font-weight: bold; }
+QLabel[class="textWarning"]     { color: #B45309; }
+QLabel[class="textPrimaryBold"] { color: #1F4E79; font-weight: bold; font-size: 14px; }
+
+QFrame[class="separator"] { background: #DDE1E6; border: none; max-height: 1px; min-height: 1px; }
+
+/* ---------- Cartes ---------- */
+QFrame[class="card"] {
+    background: #FFFFFF;
+    border: 1px solid #E3E6EA;
+    border-radius: 12px;
+}
+
+/* ---------- Boutons ---------- */
+QPushButton {
+    background: #FFFFFF;
+    border: 1px solid #D9DEE4;
+    border-radius: 8px;
+    padding: 8px 18px;
+    min-height: 18px;
+}
+QPushButton:hover    { background: #EEF2F6; }
+QPushButton:pressed  { background: #E1E7EE; }
+QPushButton:disabled { color: #9CA3AF; background: #F3F4F6; }
+
+QPushButton[class="btnPrimary"] {
+    background: #1F4E79; color: #FFFFFF; border: 1px solid #1F4E79; font-weight: bold;
+}
+QPushButton[class="btnPrimary"]:hover    { background: #2A649A; }
+QPushButton[class="btnPrimary"]:pressed  { background: #173B5C; }
+QPushButton[class="btnPrimary"]:disabled { background: #A9B9C9; border-color: #A9B9C9; color: #FFFFFF; }
+
+QPushButton[class="btnSuccess"] {
+    background: #2E7D32; color: #FFFFFF; border: 1px solid #2E7D32; font-weight: bold;
+}
+QPushButton[class="btnSuccess"]:hover   { background: #3A9340; }
+QPushButton[class="btnSuccess"]:pressed { background: #236026; }
+
+QPushButton[class="btnDanger"] {
+    background: #C00000; color: #FFFFFF; border: 1px solid #C00000; font-weight: bold;
+}
+QPushButton[class="btnDanger"]:hover    { background: #D81B1B; }
+QPushButton[class="btnDanger"]:pressed  { background: #960000; }
+QPushButton[class="btnDanger"]:disabled { background: #E3A5A5; border-color: #E3A5A5; color: #FFFFFF; }
+
+QPushButton[class="btnSecondary"] { background: #FFFFFF; color: #1F1F1F; }
+
+/* ---------- Champs de saisie ---------- */
+QLineEdit, QComboBox, QSpinBox, QDateEdit {
+    background: #FFFFFF;
+    border: 1px solid #D9DEE4;
+    border-radius: 8px;
+    padding: 7px 10px;
+    min-height: 18px;
+    selection-background-color: #1F4E79;
+    selection-color: #FFFFFF;
+}
+QLineEdit:focus, QComboBox:focus, QSpinBox:focus, QDateEdit:focus { border: 1px solid #1F4E79; }
+QComboBox QAbstractItemView {
+    background: #FFFFFF; border: 1px solid #D9DEE4;
+    selection-background-color: #D6E4F2; selection-color: #1F1F1F; outline: 0;
+}
+
+/* ---------- Tableaux ---------- */
+QTableWidget {
+    background: #FFFFFF;
+    alternate-background-color: #F8FAFC;
+    border: 1px solid #E3E6EA;
+    border-radius: 8px;
+    gridline-color: #E3E6EA;
+    selection-background-color: #D6E4F2;
+    selection-color: #1F1F1F;
+    outline: 0;
+}
+QTableWidget::item { padding: 6px 8px; border-bottom: 1px solid #EDF0F3; }
+QTableWidget::item:selected { background: #D6E4F2; }
+QHeaderView::section {
+    background: #1F4E79;
+    color: #FFFFFF;
+    padding: 10px 8px;
+    border: none;
+    font-weight: bold;
+}
+QTableCornerButton::section { background: #1F4E79; border: none; }
+
+/* ---------- Liste des alertes ---------- */
+QListWidget { background: transparent; border: none; outline: 0; }
+QListWidget::item { border: none; padding: 8px 4px; }
+
+/* ---------- Barres de progression ---------- */
+QProgressBar {
+    background: #E5E7EB;
+    border: none;
+    border-radius: 5px;
+    min-height: 10px;
+    max-height: 10px;
+}
+QProgressBar::chunk { background: #1F4E79; border-radius: 5px; }
+QProgressBar[class="barGreen"]::chunk  { background: #2E7D32; }
+QProgressBar[class="barOrange"]::chunk { background: #B45309; }
+
+/* ---------- Listes déroulantes, compteurs, dates (flèches personnalisées) ---------- */
+QComboBox::drop-down, QDateEdit::drop-down {
+    subcontrol-origin: padding; subcontrol-position: center right;
+    width: 28px; border: none;
+}
+QComboBox::down-arrow, QDateEdit::down-arrow {
+    image: url(:/images/arrow_down.png); width: 11px; height: 11px;
+}
+QSpinBox { padding-right: 26px; }
+QSpinBox::up-button   { subcontrol-origin: padding; subcontrol-position: top right;    width: 24px; border: none; }
+QSpinBox::down-button { subcontrol-origin: padding; subcontrol-position: bottom right; width: 24px; border: none; }
+QSpinBox::up-arrow    { image: url(:/images/arrow_up.png);   width: 9px; height: 9px; }
+QSpinBox::down-arrow  { image: url(:/images/arrow_down.png); width: 9px; height: 9px; }
