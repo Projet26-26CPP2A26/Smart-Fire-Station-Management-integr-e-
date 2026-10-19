@@ -1,0 +1,17 @@
+release/main.o
+release/gsmartfirestation.o
+release/gsmartfirestation_personnel.o
+release/gsmartfirestation_vehicules.o
+release/personnel.o
+release/vehicule.o
+release/personneldialog.o
+release/vehiculedialog.o
+release/statsdialog.o
+release/pdfexport.o
+release/piechartwidget.o
+release/qrc_resources.o
+release/moc_gsmartfirestation.o
+release/moc_personneldialog.o
+release/moc_vehiculedialog.o
+release/moc_statsdialog.o
+release/moc_piechartwidget.o
