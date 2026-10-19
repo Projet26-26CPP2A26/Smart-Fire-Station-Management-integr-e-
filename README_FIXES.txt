@@ -1,0 +1,2 @@
+V9 UI changes: personnel and vehicle edit forms are permanently visible and compact, arranged in horizontal field groups over two rows. Add/Modify/Delete buttons remain horizontally aligned below the table. The table remains the main area and circular statistics remain visible on the right with scrolling. The vehicle mission recommendation panel stays hidden.
+Build using SmartFireStation.pro in Qt Creator. Not compiled in this environment.
