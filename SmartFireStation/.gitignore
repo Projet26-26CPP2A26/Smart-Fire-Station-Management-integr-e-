@@ -1,0 +1,20 @@
+# Build output
+build/
+debug/
+release/
+*.o
+*.obj
+*.exe
+*.dll
+
+# Qt Creator settings
+.qtcreator/
+*.pro.user
+*.pro.user.*
+
+# qmake / moc / uic generated files
+Makefile*
+.qmake.stash
+moc_*
+ui_*.h
+qrc_*.cpp
